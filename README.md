@@ -44,31 +44,29 @@ German SMB market - DSGVO compliant by design.
 | admin | Full access, billing, organization settings |
 | manager | Create/edit schedules, approve sick leave |
 | employee | View own schedule, submit sick leave |
-### Project Structure
 TurnoApp/
-■■■ frontend/ # Angular 17+ SPA
-■ ■■■ src/
-■ ■■■ app/
-■ ■ ■■■ core/ # Auth, guards, interceptors
-■ ■ ■■■ features/ # Feature-based modules
-■ ■ ■ ■■■ auth/
-■ ■ ■ ■■■ dashboard/
-■ ■ ■ ■■■ employees/
-■ ■ ■ ■■■ schedule/
-■ ■ ■ ■■■ sick-leave/
-■ ■ ■■■ shared/ # Reusable UI components
-■ ■■■ environments/
-■■■ backend/ # Node.js + Express API
-■ ■■■ src/
-■ ■■■ modules/ # Feature modules
-■ ■ ■■■ auth/
-■ ■ ■■■ employees/
-■ ■ ■■■ schedules/
-■ ■ ■■■ sick-leave/
-■ ■■■ middleware/ # Auth, roles, error handling
-■ ■■■ config/ # DB, JWT, environment
-■ ■■■ shared/ # Utils, validators, types
-■■■ docs/ # Architecture decisions
+ |-- frontend/ # Angular 17+ SPA
+ | +-- src/
+ | +-- app/
+ | |-- core/ # Auth, guards, interceptors
+ | |-- features/
+ | | |-- auth/
+ | | |-- dashboard/
+ | | |-- employees/
+ | | |-- schedule/
+ | | +-- sick-leave/
+ | +-- shared/ # Reusable UI components
+ |-- backend/ # Node.js + Express API
+ | +-- src/
+ | |-- modules/
+ | | |-- auth/
+ | | |-- employees/
+ | | |-- schedules/
+ | | +-- sick-leave/
+ | |-- middleware/ # Auth, roles, error handling
+ | |-- config/ # DB, JWT, environment
+ | +-- shared/ # Utils, validators, types
+ +-- docs/ # Architecture decisions
 ---
 ## Getting Started
 ### Prerequisites
