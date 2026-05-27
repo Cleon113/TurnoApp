@@ -1,0 +1,15 @@
+{
+  "name": "turnoapp-backend",
+  "version": "1.0.0",
+  "description": "TurnoApp REST API — shift management for small businesses in Germany",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:migrate": "ts-node src/config/migrate.ts"
+  },
+  "keywords": ["saas", "shifts", "germany", "typescript"],
+  "author": "Leon",
+  "license": "MIT"
+}
